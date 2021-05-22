@@ -11,7 +11,7 @@ function preload() {
 function setup() {
   createCanvas(3000, 800);
   engine = Engine.create();
-  worldc = engine.world;
+  world = engine.world;
 
   ground = new Ground(200,400,600,5);
   superhero = new Hero(400,3,100,100);
