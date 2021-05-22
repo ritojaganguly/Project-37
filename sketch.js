@@ -15,7 +15,7 @@ function setup() {
 
   ground = new Ground(200,400,600,5);
   superhero = new Hero(400,3,100,100);
-  attach = new Fly(superhero.body,{x:100,y:465});
+  attach = new Throw(superhero.body,{x:100,y:465});
   monster = new Monster(300,200,100,100);
   block1 = new Block(280,350,30,40);
   block2 = new Block(310,350,30,40);
@@ -62,7 +62,7 @@ function draw() {
 
 }
 
-function mousePressed(){
+  function mouseDragged(){
   Matter.Body.setPosition(superhero.body,{x:mouseX,y:mouseY});
 }
 
