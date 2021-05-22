@@ -14,8 +14,8 @@ function setup() {
   world = engine.world;
 
   ground = new Ground(200,400,600,5);
-  superhero = new Hero(400,3,100,100);
-  attach = new Throw(superhero.body,{x:100,y:465});
+  superhero = new Hero(50,300,100,100);
+  attach = new Throw(superhero.body,{x:50,y:300});
   monster = new Monster(300,200,100,100);
   block1 = new Block(280,350,30,40);
   block2 = new Block(310,350,30,40);
